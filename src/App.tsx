@@ -1,10 +1,12 @@
-import { useEffect, useRef } from "react";
-import Reveal from "reveal.js";
-import "reveal.js/dist/reveal.css";
-import "reveal.js/dist/theme/black.css";
+import { useEffect, useRef } from 'react';
+
+import Reveal from 'reveal.js';
+
+import 'reveal.js/dist/reveal.css';
+import 'reveal.js/dist/theme/black.css';
 import { Slides } from './Slides.tsx';
 
-function App() {
+export const App = () => {
   const deckDivRef = useRef<HTMLDivElement>(null); // reference to deck container div
   const deckRef = useRef<Reveal.Api | null>(null); // reference to deck reveal instance
 
@@ -13,7 +15,7 @@ function App() {
     if (deckRef.current) return;
 
     deckRef.current = new Reveal(deckDivRef.current!, {
-      transition: "slide",
+      transition: 'slide',
       // other config options
     });
 
@@ -28,7 +30,7 @@ function App() {
           deckRef.current = null;
         }
       } catch {
-        console.warn("Reveal.js destroy call failed.");
+        console.warn('Reveal.js destroy call failed.');
       }
     };
   }, []);
@@ -42,6 +44,4 @@ function App() {
       </div>
     </div>
   );
-}
-
-export default App
+};

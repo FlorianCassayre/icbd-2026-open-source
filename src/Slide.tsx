@@ -5,9 +5,5 @@ interface SlideProps {
 }
 
 export const Slide: React.FC<SlideProps> = ({ children }) => {
-  return (
-    <section>
-      {children}
-    </section>
-  )
-}
+  return <section>{children}</section>;
+};
