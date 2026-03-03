@@ -42,7 +42,6 @@ import { EndSlide } from './8-outro/EndSlide';
 export const Slides: React.FC = () => {
   return (
     <Fragment>
-      <SpeakerSlide />
       <FrontSlide />
       <>
         {/* 1. Speaker presentation */}

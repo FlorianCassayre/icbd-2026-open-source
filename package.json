@@ -8,6 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint src --cache",
     "fix": "npm run lint -- --fix",
+    "compile": "tsc --noEmit -p tsconfig.app.json",
     "preview": "vite preview"
   },
   "dependencies": {
