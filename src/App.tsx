@@ -1,10 +1,14 @@
 import { useEffect, useRef } from 'react';
 
 import Reveal from 'reveal.js';
-
 import 'reveal.js/dist/reveal.css';
-import 'reveal.js/dist/theme/black.css';
-import { Slides } from './Slides.tsx';
+import 'reveal.js/dist/theme/white.css';
+import RevealHighlight from 'reveal.js/plugin/highlight/highlight';
+
+import { Slides } from './slides/Slides';
+
+import '@fontsource/luxurious-roman/latin.css';
+import 'reveal.js/plugin/highlight/zenburn.css';
 
 export const App = () => {
   const deckDivRef = useRef<HTMLDivElement>(null); // reference to deck container div
@@ -16,6 +20,8 @@ export const App = () => {
 
     deckRef.current = new Reveal(deckDivRef.current!, {
       transition: 'slide',
+      slideNumber: true,
+      plugins: [RevealHighlight],
       // other config options
     });
 

@@ -1,9 +1,10 @@
 import * as React from 'react';
+import type { ComponentProps } from 'react';
 
-interface SlideProps {
+interface SlideProps extends ComponentProps<'section'> {
   children: React.ReactNode;
 }
 
-export const Slide: React.FC<SlideProps> = ({ children }) => {
-  return <section>{children}</section>;
+export const Slide: React.FC<SlideProps> = props => {
+  return <section {...props} />;
 };
