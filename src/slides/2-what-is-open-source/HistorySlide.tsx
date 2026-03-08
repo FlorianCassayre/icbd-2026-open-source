@@ -53,7 +53,7 @@ const TimelineListItem: React.FC<TimelineListItemProps> = ({ index, year, childr
       marginBottom: '20px',
     }}
   >
-    <span className="fancy">{year}</span>
+    <span className="fun">{year}</span>
     {' - '}
     {children}
   </li>
@@ -123,7 +123,9 @@ export const HistorySlide = () => (
               1989: <strong>GNU public license</strong>
             </li>
           </ul>
-          <img src={gnuLogo} width="150px" />
+          <div>
+            <img src={gnuLogo} width="150px" />
+          </div>
           <Attribution>Aurelio A. Heckert, GFDL 1.3</Attribution>
         </div>
         <div className="fragment fade-in-then-out" data-fragment-index="4">
@@ -206,8 +208,11 @@ export const HistorySlide = () => (
               <li>
                 2023: <strong>LLaMA</strong> is open-sourced by Meta
               </li>
+              <li>
+                2025: <strong>OpenClaw</strong> is created
+              </li>
               <li>Massive scraping of open source software to feed AI</li>
-              <li>"Open-weights" models</li>
+              <li>"Open weights" models</li>
               <li>...</li>
             </ul>
           </div>

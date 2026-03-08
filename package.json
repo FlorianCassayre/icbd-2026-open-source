@@ -12,6 +12,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/edu-sa-beginner": "5.2.7",
     "@fontsource/luxurious-roman": "5.2.7",
     "react": "19.2.0",
     "react-dom": "19.2.0",

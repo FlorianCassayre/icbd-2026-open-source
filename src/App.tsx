@@ -21,6 +21,11 @@ export const App = () => {
     deckRef.current = new Reveal(deckDivRef.current!, {
       transition: 'slide',
       slideNumber: true,
+      controls: false,
+      progress: false,
+      hash: true,
+      hashOneBasedIndex: true,
+      hideCursorTime: 1000,
       plugins: [RevealHighlight],
       // other config options
     });

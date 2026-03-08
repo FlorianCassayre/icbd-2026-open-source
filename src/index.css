@@ -8,8 +8,12 @@ html, body {
     height: 100%;
 }
 
-.fancy {
+.fun {
   font-family: "Luxurious Roman", serif;
+}
+
+.fancy {
+  font-family: "Edu SA Beginner", serif;
 }
 
 pre > code {

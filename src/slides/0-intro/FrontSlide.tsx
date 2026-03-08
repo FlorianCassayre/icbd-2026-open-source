@@ -11,6 +11,8 @@ export const FrontSlide = () => (
         {i === 0 && (
           <>
             <h1>Open Source</h1>
+            <small>Florian Cassayre</small>
+            <br />
             <span>IC Boost Day 2026</span>
             <br />
             <span>EPFL</span>

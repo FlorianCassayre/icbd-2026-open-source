@@ -11,7 +11,9 @@ export const AdoptOpenSourceSlide: React.FC = () => (
   <Slide>
     <Slide>
       <h4>Free open source software alternatives</h4>
-      <div className="font-medium">You can support open source software as a user!</div>
+      <div className="font-small" style={{ fontStyle: 'italic' }}>
+        You can support open source software as a user!
+      </div>
       <div className="font-medium" style={{ marginTop: '20px', marginBottom: '60px' }}>
         For the vast majority of commercial software available,
         <br />

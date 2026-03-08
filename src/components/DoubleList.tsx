@@ -1,8 +1,10 @@
 import * as React from 'react';
 
+import type { IconType } from 'react-icons';
+
 interface DoubleListItem {
   title: string;
-  list: string[];
+  list: (string | { icon: IconType; text: string })[];
 }
 
 interface DoubleListProps {
@@ -29,7 +31,25 @@ export const DoubleList: React.FC<DoubleListProps> = ({ items, fancy, ordered, s
         {items.map(({ list }, i) => (
           <ul key={i} className="fragment fade-in-then-out" data-fragment-index={i + 1} style={{ fontSize: '1.5rem' }}>
             {list.map((listItem, j) => (
-              <li key={j}>{listItem}</li>
+              <li key={j}>
+                {typeof listItem === 'string'
+                  ? listItem
+                  : (() => {
+                      const { icon: Icon, text } = listItem;
+                      return (
+                        <span
+                          style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '8px',
+                          }}
+                        >
+                          <Icon />
+                          <span>{text}</span>
+                        </span>
+                      );
+                    })()}
+              </li>
             ))}
           </ul>
         ))}

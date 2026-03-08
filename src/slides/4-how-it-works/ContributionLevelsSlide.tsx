@@ -5,7 +5,7 @@ import { Slide } from '../../Slide';
 
 export const ContributionLevelsSlide: React.FC = () => (
   <Slide>
-    <h2>Levels of contribution</h2>
+    <h2>Getting started</h2>
     <br />
     <DoubleList
       items={[

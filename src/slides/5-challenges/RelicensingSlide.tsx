@@ -36,8 +36,7 @@ export const RelicensingSlide: React.FC = () => (
     <Slide>
       <h3>Should I sign a CLA?</h3>
       <div className="font-medium" style={{ fontStyle: 'italic', marginBottom: '10px' }}>
-        "If you sign away your rights by agreeing to a CLA, you retain all of the rights associated with your work.
-        [...] A CLA is a promise that software will one day become non-free"
+        "A CLA is a promise that software will one day become non-free"
       </div>
       <Attribution>https://drewdevault.com/2023/07/04/Dont-sign-a-CLA-2.html</Attribution>
       <br />

@@ -16,7 +16,7 @@ export const CloudSlide: React.FC = () => (
     </Slide>
     <Slide>
       <h4>New tensions</h4>
-      <ul className="font-medium">
+      <ul className="font-small">
         <li>Cloud providers can monetize OSS without equal contribution</li>
         <li>Maintainers face sustainability pressure</li>
         <li>Ecosystem control can centralize in large platforms</li>
@@ -24,7 +24,7 @@ export const CloudSlide: React.FC = () => (
     </Slide>
     <Slide>
       <h4>Foreseeable future in the cloud</h4>
-      <ul className="font-medium">
+      <ul className="font-small">
         <li>Stronger cloud-native OSS ecosystems</li>
         <li>Platform-level collaboration between OSS and cloud providers</li>
         <li>Cloud-aware licensing strategies; despite of OSI incompliance</li>

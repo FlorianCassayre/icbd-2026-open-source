@@ -14,13 +14,14 @@ export const AiSlide: React.FC = () => (
     </Slide>
     <Slide>
       <h4>What this tells us</h4>
-      <div className="font-medium" style={{ marginBottom: '20px' }}>
-        Similar to what was observed in the private industry:
+      <div className="font-small" style={{ fontStyle: 'italic', marginBottom: '20px' }}>
+        Similar to what was observed in the private industry!
       </div>
-      <ul className="font-medium">
+      <ul className="font-small">
         <li>Velocity is increasing, as writing code may no longer be the bottleneck</li>
         <li>Faster iteration and prototyping</li>
         <li>Understanding systems, architecture and scalability will likely remain valuable skills</li>
+        <li>Ultimately software is written for humans</li>
       </ul>
     </Slide>
   </Slide>

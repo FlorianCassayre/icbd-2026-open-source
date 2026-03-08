@@ -1,3 +1,5 @@
+import { FaMinusCircle, FaPlusCircle } from 'react-icons/fa';
+
 import { DoubleList } from '../../components/DoubleList';
 import { Slide } from '../../Slide';
 
@@ -12,8 +14,8 @@ export const GovernanceModelsSlide = () => (
           title: 'Benevolent Dictator for Life',
           list: [
             'Decision-making by a single individual',
-            '+ Strong vision, clear direction',
-            '- Bottleneck, succession problem',
+            { icon: FaPlusCircle, text: 'Strong vision, clear direction' },
+            { icon: FaMinusCircle, text: 'Bottleneck, succession problem' },
             'e.g. Linus Torvalds',
           ],
         },
@@ -21,8 +23,8 @@ export const GovernanceModelsSlide = () => (
           title: 'Meritocratic',
           list: [
             'Influence earned through contribution',
-            '+ Encourages contribution, scalable',
-            '- Scattering',
+            { icon: FaPlusCircle, text: 'Encourages contribution, scalable' },
+            { icon: FaMinusCircle, text: 'Scattering' },
             'e.g. Apache',
           ],
         },
@@ -30,8 +32,8 @@ export const GovernanceModelsSlide = () => (
           title: 'Liberal',
           list: [
             'Decisions emerge through discussions and consensus',
-            '+ Encourages participation, inclusive',
-            '- Slow decision making, consensus is rare',
+            { icon: FaPlusCircle, text: 'Encourages participation, inclusive' },
+            { icon: FaMinusCircle, text: 'Slow decision making, consensus is rare' },
             'e.g. W3C',
           ],
         },
@@ -39,8 +41,8 @@ export const GovernanceModelsSlide = () => (
           title: 'Foundation-led',
           list: [
             'Project owned by a nonprofit foundation',
-            '+ Neutral, corporate/community balance',
-            '- Bureaucratic, can become corporate',
+            { icon: FaPlusCircle, text: 'Neutral, corporate/community balance' },
+            { icon: FaMinusCircle, text: 'Bureaucratic, can become corporate' },
             'e.g. Mozilla',
           ],
         },
@@ -48,8 +50,8 @@ export const GovernanceModelsSlide = () => (
           title: 'Corporate-led',
           list: [
             'Project owned by a private company',
-            '+ Funding, fast execution',
-            '- Risk of license shift',
+            { icon: FaPlusCircle, text: 'Funding, fast execution' },
+            { icon: FaMinusCircle, text: 'Risk of license shift' },
             'e.g. React',
           ],
         },

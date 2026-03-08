@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import type { IconType } from 'react-icons';
 import { AiFillGithub } from 'react-icons/ai';
+import { DiOpensource } from 'react-icons/di';
 import { MdEmail, MdLanguage } from 'react-icons/md';
 
 import { Attribution } from '../../components/Attribution';
@@ -33,17 +34,21 @@ const SocialLink: React.FC<SocialLinkProps> = ({ icon: Icon, url, children }) =>
 
 export const EndSlide = () => (
   <Slide>
-    <h1>Thank You</h1>
-
-    <SocialLink icon={AiFillGithub} url="https://github.com/FlorianCassayre">
-      FlorianCassayre
-    </SocialLink>
-    <SocialLink icon={MdLanguage} url="https://florian.cassayre.me">
-      florian.cassayre.me
-    </SocialLink>
-    <SocialLink icon={MdEmail} url="mailto:florian@cassayre.me">
-      florian@cassayre.me
-    </SocialLink>
-    <Attribution>https://github.com/FlorianCassayre/icbd-2026-open-source</Attribution>
+    <Slide>
+      <h3>Let's stay in touch</h3>
+      <SocialLink icon={AiFillGithub} url="https://github.com/FlorianCassayre">
+        FlorianCassayre
+      </SocialLink>
+      <SocialLink icon={MdLanguage} url="https://florian.cassayre.me">
+        florian.cassayre.me
+      </SocialLink>
+      <SocialLink icon={MdEmail} url="mailto:florian@cassayre.me">
+        florian@cassayre.me
+      </SocialLink>
+      <Attribution>https://github.com/FlorianCassayre/icbd-2026-open-source</Attribution>
+    </Slide>
+    <Slide>
+      <DiOpensource data-id="icon" fontSize={200} />
+    </Slide>
   </Slide>
 );

@@ -18,11 +18,11 @@ const principles = [
 
 export const PrinciplesSlide: React.FC = () => (
   <Slide>
-    <h2>Principles</h2>
-    <ol style={{ fontSize: '2.5rem' }}>
+    <h2>Formal principles</h2>
+    <ol style={{ fontSize: '2.5rem', marginBottom: '10px' }}>
       {principles.map((principle, i) => (
         <li key={i} className="fragment">
-          <span className="fancy">{principle}</span>
+          <span className="fun">{principle}</span>
         </li>
       ))}
     </ol>

@@ -60,6 +60,7 @@ export const LeftPadSlide = () => (
     </Slide>
     <Slide>
       <img src={xkcdFragility} />
+      <Attribution>https://xkcd.com/2102/</Attribution>
     </Slide>
   </Slide>
 );
