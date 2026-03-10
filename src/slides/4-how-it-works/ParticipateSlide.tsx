@@ -15,7 +15,7 @@ export const ParticipateSlide: React.FC = () => (
         <li>Structured mentorship</li>
       </ul>
       <div className="font-medium" style={{ marginTop: '40px' }}>
-        → <strong>Definitive careeer starter</strong>
+        → <strong>Definitive career starter</strong>
       </div>
     </Slide>
     <Slide>
